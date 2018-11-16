@@ -76,10 +76,20 @@ export class DashboardComponent implements OnInit {
       }
     );
   }
-  eliminarMascota(key) {
-    this.servicioPets.deletePet(key).then(() => {
-      console.log('Eliminado');
-      alert('Eliminado');
-    });
+  eliminarMascota(pet) {
+    /*this.action = 'remove'; */
+    console.log(pet);
+    this.servicioPets.deletePet(pet).subscribe((data) => {
+      console.log(data);
+        alert('Eliminado');
+        
+      this.action = 'list';
+    }, (error) => {
+      console.log(error);
+      }
+      
+    );
+    
+        
   }
 }

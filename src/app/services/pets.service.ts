@@ -28,7 +28,8 @@ export class PetsService {
     const  p = {id: pet._id, nombre: pet.nombre, tipo: pet.tipo};
     return this.http.post('http://localhost:3000/updatepet', p);
   }
-  deletePet(key) {
-    return this.pets.remove(key);
+  deletePet(pet: any) {
+    const  delatep = {id: pet._id};
+    return this.http.post('http://localhost:3000/delatepet', delatep);
   }
 }
