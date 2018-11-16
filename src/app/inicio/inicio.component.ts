@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MzButtonModule } from 'ngx-materialize'
+
 
 @Component({
   selector: 'app-inicio',
