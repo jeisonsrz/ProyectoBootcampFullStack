@@ -17,6 +17,8 @@ import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AuthenticationGuard} from './services/authentication.guard';
 import { UploadfileComponent } from './uploadfile/uploadfile.component';
 import {AngularFireStorageModule} from '@angular/fire/storage';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MzButtonModule, MzInputModule, MzValidationModule } from 'ngx-materialize';
 
 const rutas: Routes = [
   {path: '', component : InicioComponent},
@@ -46,7 +48,15 @@ const rutas: Routes = [
     AngularFireDatabaseModule,
     FormsModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    BrowserAnimationsModule,
+    MzButtonModule,
+    MzInputModule,
+    MzValidationModule
+  ],
+  exports: [
+    MzInputModule,
+    MzValidationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/materialize-css/dist/css/materialize.css";
 
 .avatarFrameOffline{
     background: rgba(242,246,248,1);
@@ -14,7 +15,7 @@
     border-radius: 10px;
     border: 1px solid white;
     display: inline-block;
-  
+
   }
   .avatarFrameonline{
     background: rgba(210,255,82,1);
@@ -31,49 +32,49 @@
     border: 1px solid lime;
     display: inline-block;
   }
-  
+
   .center{
     text-align: center !important;
-  
+
   }
-  
+
   .marto15{
     margin-top: 15px;
   }
-  
+
   .marbo15{
     margin-bottom: 5px;
   }
-  
+
   .btn-primary{
     background-color: limegreen;
-  
+
   }
-  
+
   .generalContent{
     margin-top: 56px;
   }
-  
+
   #homeAvatarPicture{
     max-width: 100px;
   }
-  
+
   .disblo{
     display: block !important;
   }
-  
+
   .marbo5{
     margin-bottom: 5px;
   }
-  
+
   .pato45{
     padding-top: 45px;
   }
-  
+
   input[type ="file"]{
     display: none;
   }
-  
+
   .custom-file-upload{
     background: #f2f6f8;
     background: -moz-linear-gradient(top, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
@@ -85,4 +86,3 @@
     cursor: pointer;
     border: 1px solid #8dd2f3;
   }
-  

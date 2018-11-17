@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MzCardModule } from 'ngx-materialize';
 
 @Component({
   selector: 'app-perfil',
