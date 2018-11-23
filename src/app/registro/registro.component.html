@@ -1,0 +1,101 @@
+<div class="container text-center">
+  <h1>{{ title }} registro usuarios</h1>
+  <hr />
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <figure>
+        <img
+          src="../../assets/img/logo.jpeg"
+          height="300px"
+          alt="Logo de eurekatechnology"
+        />
+      </figure>
+    </div>
+    <div class="col-6">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputNombre">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputName"
+            placeholder="Nombre"
+            [(ngModel)]="personaRegistro.nombre"
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputlastname">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputLastname"
+            placeholder="Apellido"
+            [(ngModel)]="personaRegistro.apellido"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputDireccion">Direcccion</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputDireccion"
+          placeholder="1234 Calle Falsa"
+          [(ngModel)]="personaRegistro.direccion"
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputTelefono">Telefono</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputTelefono"
+          placeholder="316 687 3221"
+          [(ngModel)]="personaRegistro.telefono"
+        />
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCountry">Pais</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputCountry"
+            [(ngModel)]="personaRegistro.pais"
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputCity">Ciudad</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputCity"
+            [(ngModel)]="personaRegistro.ciudad"
+          />
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputZip"
+            [(ngModel)]="personaRegistro.zip"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck">
+            Aceptar terminos y Condiciones
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="guardarPersona()">
+        Aceptar
+      </button>
+    </div>
+  </div>
+</div>

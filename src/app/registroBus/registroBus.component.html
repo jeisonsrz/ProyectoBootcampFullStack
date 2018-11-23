@@ -1,0 +1,87 @@
+<div class="container text-center">
+  <h1>{{ title }} registro de Bus</h1>
+  <hr />
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <figure>
+        <img
+          src="../../assets/img/logo.jpeg"
+          height="300px"
+          alt="Logo de eurekatechnology"
+        />
+      </figure>
+    </div>
+
+    <div class="col-6">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputIdBus">Id ruta del Bus</label>
+          <input
+            type="number"
+            class="form-control"
+            id="inputIdBus"
+            placeholder="Id Bus"
+            [(ngModel)]="busRegistro.idBus"
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputNombreruta">Nombre de la Ruta</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputNombreRuta"
+            placeholder="Nombre Ruta"
+            [(ngModel)]="busRegistro.rutaBus"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputNomConductor">Nombre Conductor</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputNomConductor"
+          placeholder="nombre"
+          [(ngModel)]="busRegistro.nombreConductor"
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputApeConductor">Apellido Conductor</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputApeConductor"
+          placeholder="apellido"
+          [(ngModel)]="busRegistro.apellidoConductor"
+        />
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCelular">telefono</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputCelular"
+            placeholder="3164879335"
+            [(ngModel)]="busRegistro.telefonoConductor"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck">
+            Aceptar terminos y Condiciones
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="guardarBus()">
+        Aceptar
+      </button>
+    </div>
+  </div>
+</div>

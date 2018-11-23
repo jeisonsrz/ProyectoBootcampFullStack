@@ -1,17 +1,62 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">EurekaTrip🚌</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" routerLink="/inicio">Inicio <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" routerLink="/perfil">Perfil</a>
-      <a class="nav-item nav-link" routerLink="/dashboard">Dashboard</a>
-      <a class="nav-item nav-link"  routerLink="/login">Loginn</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <figure class="logo">
+      <img src="../assets/img/logo.jpeg" height="50" alt="Logo de eurekatechnology" />
+  </figure>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+     
+     
+    
+
+      <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link " routerLink="/inicio">Inicio <span class="sr-only">(current)</span></a>
+     
+        </li>
+
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/perfil">Perfil</a>
+       
+          </li>
+
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link"  routerLink="/login">Loginn</a>
+       
+          </li>
+
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+       
+          </li>
+
+
+
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/inicio2">EurekaTrip</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/buses">Parada Buses<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/login2">Login</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
       <a (click)="logout()" class="nav-item nav-link"  >Logout</a>
-    </div>
-  </div>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/contacto">Contactanos</a>
+    </li>
+    
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+  </form>
+</div>
 </nav>
 <router-outlet></router-outlet>
-<h4>Hola papá</h4>
+<h4>Hola ke aceee</h4>

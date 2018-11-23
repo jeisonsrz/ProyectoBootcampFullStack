@@ -1,0 +1,45 @@
+<div class="container text-center ">
+  <h1>Buses proximos a llegar</h1>
+  <ul class="list-group">
+    <!--
+      ngFor hace que la etiqueta se repita cuantas veces sea . Obteniendo el nombrede la ruta del arreglo buses
+    -->
+    <ng-container *ngFor="let bus of buses">
+      <a routerLink="/detalleBuses/{{bus.id}}">
+        <li class="list-group-item" >{{ bus.rutaBus }}</li>
+      </a>
+    </ng-container>
+  </ul>
+</div>
+<hr />
+<!-- <div class="container text-center">
+  <h1>Buses que ya pasaron</h1>
+  <ul class="list-group">
+    <ng-container
+      *ngFor="let bus of buses; let i = index"
+      [ngSwitch]="bus.cercania"
+    > -->
+      <!--
+        ngStyle {atributo a modificar: (condicion a evaluar) ? operadorternario para indicar si es true es negro si es false en gris
+      -->
+      <!-- ngClass  {clasedecss: (condicion a evaluar)} -->
+      <!-- <li 
+          class="list-group-item"
+          *ngIf="bus.active"
+          [ngStyle]="{ color: bus.active ? 'green' : 'red' }"
+          [ngClass]="{ busdisponible: (i + 1) % 2 == 0 }"
+          [appResaltar]="bus.plan"
+          contar_click
+        >
+          {{ bus.rutaBus }} -
+
+          <span *ngSwitchCase="1" [ngStyle]="{ color: 'green' }"> Muy cercano</span>
+          <span *ngSwitchCase="2" [ngStyle]="{ color: 'black' }"> Cercano</span>
+          <span *ngSwitchCase="3" [ngStyle]="{ color: 'red' }"> Lejano</span>
+        </li>
+    </ng-container> -->
+    <!--
+      ngFor hace que la etiqueta se repita cuantas veces sea . Obteniendo el nombrede la ruta del arreglo buses
+    -->
+  <!-- </ul>
+</div> -->
